@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>DOYINS-CASUALS</title>
 
   <style>
     #top-bar {
       background-color: black;
-      padding: 2px;
+      /*padding: 2px;*/
       margin: 0 auto;
       width: 100%;
       height: 50px;
@@ -28,7 +28,7 @@
     #second-bar {
 
       height: 50px;
-      padding: 2px;
+      /*padding: 2px;*/
       margin: 0 auto;
       width: 100%;
       color: black bold;
@@ -46,6 +46,7 @@
       width: 100%;
       height: 900px;
       margin: 0 auto;
+      /*padding: 2px;*/
       background-image: url("tom.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -59,19 +60,23 @@
     }
 
     #fourth-bar {
-      height: 200px;
+      height: 150px;
+      padding: 2px;
       margin: 0 auto;
-      background-color: whitesmoke;
+      background-color: yellow;
       width: 100%;
       color: black bold;
 
     }
 
+    .endbar {
+      background-color: inherit;
+
+    }
 
 
     #account {
       padding: 20px;
-      background-color: yellow;
       width: 20%;
       padding: 20px;
       float: left;
@@ -79,7 +84,6 @@
     }
 
     #company {
-      background-color: blue;
       width: 20%;
       padding: 20px;
       float: left;
@@ -87,7 +91,6 @@
     }
 
     #connect {
-      background-color: yellow;
       width: 20%;
       padding: 20px;
       float: left;
@@ -95,9 +98,8 @@
     }
 
     #visit-us {
-      background-color: yellow;
       width: 31%;
-      margin-right: -2px;
+      /*margin-right: -2px;*/
       padding: 20px;
       float: left;
 
@@ -117,12 +119,41 @@
 
     }
 
-    #search-box {
+    #search-button {
 
-      justify-content: center;
-      /* align horizontal */
-      margin-left: 260px;
-      font-size: 40px;
+      /*text-align: center;
+      align-items: center;*/
+      margin: auto;
+      display: block;
+      font-weight: bold;
+      background-color: transparent;
+      width: 50px;
+      height: 30px;
+    }
+
+    #search-button:hover {
+      background-color: steelblue;
+    }
+
+    #search-box {
+      background-color: #ffffff;
+      border: none;
+      width: 80px;
+      margin-top: 9px;
+      margin-right: 0;
+      font-weight: bold;
+      padding: 3px 0 3px 3px;
+      font-size: 14px;
+      float: left;
+
+    }
+
+    #magnifying-glass {
+      background-color: #ffffff;
+      border: none;
+      margin-top: 9px;
+      height: 22px;
+
     }
 
     a {
@@ -167,6 +198,11 @@
 
     }
 
+    #second-bar-search {
+      float: right;
+
+    }
+
 
     body {
 
@@ -204,7 +240,12 @@
       <img id="sec-img" src="NGN.png">
       <a id="floatright" href="http://men.com">signup</a>
       <a id="floatright" href="http://men.com">login</a>
-      <a id="floatright" href="http://men.com">search</a>
+      <div id="second-bar-search">
+        <input id="search-box" type="text" placeholder="search">
+        <input type="image" id="magnifying-glass" src="search.png">
+
+      </div>
+
 
 
 
@@ -217,7 +258,8 @@
     <div id="third-section">
       <h1 id="homepage-text1">Home Away From Home! </h1>
       <h4 id="homepage-text2">make your first order now</h4>
-      <input id="search-box" type="button" value="shop">
+      <div>
+        <input id="search-button" type="button" value="shop"></div>
 
 
     </div>
@@ -227,36 +269,33 @@
 
 
   <div id="fourth-bar">
-    <div id="account">
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-
-
+    <div id="account" class="endbar">
+      <h3>Account</h3>
+      <p><a href="accounts.html">Manage Account</a></p>
+      <p><a href="accounts.html">Saved items</a></p>
+      <p><a href="accounts.html">Orders & Return</a></p>
     </div>
     <div id="company" class="endbar">
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
+      <h3>Company</h3>
+      <p><a href="accounts.html">About</a></p>
+      <p><a href="accounts.html">Factories</a></p>
+      <p><a href="accounts.html">Contact & FAQ</a></p>
+
 
 
     </div>
     <div id="connect" class="endbar">
-
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
+      <h3>Connect</h3>
+      <p><a href="accounts.html">instagram</a></p>
+      <p><a href="accounts.html">Twitter</a></p>
+      <p><a href="accounts.html">facebook</a></p>
 
     </div>
     <div id="visit-us" class="endbar">
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-      <p>human</p>
-
+      <h3>Visit Us</h3>
+      <p><a href="accounts.html">find a location nearest</a></p>
+      <p><a href="accounts.html">offices</a></p>
+      <p><a href="accounts.html">Retail point</a></p>
 
     </div>
 
