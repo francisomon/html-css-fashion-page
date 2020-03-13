@@ -9,7 +9,7 @@
   <style>
     #top-bar {
       background-color: black;
-      /*padding: 2px;*/
+      padding-top: 2px;
       margin: 0 auto;
       width: 100%;
       height: 50px;
@@ -24,6 +24,21 @@
 
     }
 
+    .navbar {
+      overflow: hidden;
+      margin-bottom: 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .main {
+
+      margin-top: 70px;
+
+    }
+
+
 
     #second-bar {
 
@@ -32,6 +47,7 @@
       margin: 0 auto;
       width: 100%;
       color: black bold;
+      background-color: #ffffff;
 
     }
 
@@ -47,9 +63,10 @@
       height: 900px;
       margin: 0 auto;
       /*padding: 2px;*/
-      background-image: url("tom.jpg");
+      background-image: url("doyin.jpg");
+      background-color: lightpink;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: scroll;
       background-size: 100%;
       display: flex;
       justify-content: center;
@@ -61,9 +78,9 @@
 
     #fourth-bar {
       height: 150px;
-      padding: 2px;
+      /*padding: 2px;*/
       margin: 0 auto;
-      background-color: yellow;
+      background-color: #ffffff;
       width: 100%;
       color: black bold;
 
@@ -76,60 +93,62 @@
 
 
     #account {
-      padding: 20px;
-      width: 20%;
-      padding: 20px;
+      width: 25%;
+      padding-left: 1%;
       float: left;
+      height: 120px;
 
     }
 
     #company {
-      width: 20%;
-      padding: 20px;
+      width: 25%;
+      /*padding: 20px;*/
       float: left;
+      height: 120px;
 
     }
 
     #connect {
-      width: 20%;
-      padding: 20px;
+      width: 25%;
+      /*padding: 20px;*/
       float: left;
+      height: 120px;
 
     }
 
     #visit-us {
-      width: 31%;
+      /*width: 25%;*/
       /*margin-right: -2px;*/
-      padding: 20px;
+      /*padding: 20px;*/
       float: left;
+      height: 120px;
 
     }
 
     #homepage-text1 {
-
+      color: aliceblue;
       font-size: 70px;
       margin-top: 150px;
     }
 
     #homepage-text2 {
-
+      color: aliceblue;
       font-size: 40px;
       margin-top: 10px;
       margin-left: 110px;
 
     }
 
-    #search-button {
+    /*#search-button {
 
-      /*text-align: center;
-      align-items: center;*/
+      
       margin: auto;
       display: block;
       font-weight: bold;
       background-color: transparent;
       width: 50px;
       height: 30px;
-    }
+    }*/
 
     #search-button:hover {
       background-color: steelblue;
@@ -174,8 +193,10 @@
 
     #sec-img {
       image-resolution: 10;
+      width: 15px;
+      height: 15px;
       float: right;
-      margin-top: 2px;
+      margin-top: 11px;
       margin-bottom: 5px;
       margin-right: 20px;
     }
@@ -218,88 +239,90 @@
 </head>
 
 <body>
-  <div id="top-bar" class="d">
-    <img id="top-img" src="NGN.png">
-    <p>we make your experience count!</p>
+  <div class="navbar">
+    <div id="top-bar">
+      <img id="top-img" src="NGN.png">
+      <p>we make your experience count!</p>
 
-  </div>
-  <div class="clear"></div>
-
-  <div id="second-bar" class="d">
-
-    <div id="floatleft">
-      <a id="floatleft" href="http://men.com">women</a>
-      <a id="floatleft" href="http://men.com">men</a>
-      <a id="floatleft" href="http://men.com">about us</a>
-      <a id="floatleft" href="http://men.com">contact us</a>
     </div>
+    <div class="clear"></div>
 
+    <div id="second-bar" class="d">
 
-
-    <div id="floatright">
-      <img id="sec-img" src="NGN.png">
-      <a id="floatright" href="http://men.com">signup</a>
-      <a id="floatright" href="http://men.com">login</a>
-      <div id="second-bar-search">
-        <input id="search-box" type="text" placeholder="search">
-        <input type="image" id="magnifying-glass" src="search.png">
-
+      <div id="floatleft">
+        <a id="floatleft" href="http://men.com">women</a>
+        <a id="floatleft" href="http://men.com">men</a>
+        <a id="floatleft" href="http://men.com">about us</a>
+        <a id="floatleft" href="http://men.com">contact us</a>
       </div>
 
 
 
+      <div id="floatright">
+        <input type="image" id="sec-img" src="bag.PNG">
+        <a id="floatright" href="http://men.com">signup</a>
+        <a id="floatright" href="http://men.com">login</a>
+        <div id="second-bar-search">
+          <input id="search-box" type="text" placeholder="search">
+          <input type="image" id="magnifying-glass" src="search.png">
+
+        </div>
+
+
+
+
+      </div>
 
     </div>
-
   </div>
   <div class="clear"></div>
+  <div class="main">
 
-  <div id="third-bar">
-    <div id="third-section">
-      <h1 id="homepage-text1">Home Away From Home! </h1>
-      <h4 id="homepage-text2">make your first order now</h4>
-      <div>
-        <input id="search-button" type="button" value="shop"></div>
+    <div id="third-bar">
+      <div id="third-section">
+        <h1 id="homepage-text1">Home Away From Home! </h1>
+        <h4 id="homepage-text2">make your first order now</h4>
 
+      </div>
 
     </div>
+    <div class="clear"></div>
 
+
+    <div id="fourth-bar">
+      <div id="account" class="endbar">
+        <h3>Account</h3>
+        <p><a href="accounts.html">Manage Account</a></p>
+        <p><a href="accounts.html">Saved items</a></p>
+        <p><a href="accounts.html">Orders & Return</a></p>
+      </div>
+      <div id="company" class="endbar">
+        <h3>Company</h3>
+        <p><a href="accounts.html">About</a></p>
+        <p><a href="accounts.html">Factories</a></p>
+        <p><a href="accounts.html">Contact & FAQ</a></p>
+
+
+
+      </div>
+      <div id="connect" class="endbar">
+        <h3>Connect</h3>
+        <p><a href="accounts.html">instagram</a></p>
+        <p><a href="accounts.html">Twitter</a></p>
+        <p><a href="accounts.html">facebook</a></p>
+
+      </div>
+      <div id="visit-us" class="endbar">
+        <h3>Visit Us</h3>
+        <p><a href="accounts.html">find a location nearest</a></p>
+        <p><a href="accounts.html">offices</a></p>
+        <p><a href="accounts.html">Retail point</a></p>
+
+      </div>
+
+    </div>
   </div>
-  <div class="clear"></div>
 
-
-  <div id="fourth-bar">
-    <div id="account" class="endbar">
-      <h3>Account</h3>
-      <p><a href="accounts.html">Manage Account</a></p>
-      <p><a href="accounts.html">Saved items</a></p>
-      <p><a href="accounts.html">Orders & Return</a></p>
-    </div>
-    <div id="company" class="endbar">
-      <h3>Company</h3>
-      <p><a href="accounts.html">About</a></p>
-      <p><a href="accounts.html">Factories</a></p>
-      <p><a href="accounts.html">Contact & FAQ</a></p>
-
-
-
-    </div>
-    <div id="connect" class="endbar">
-      <h3>Connect</h3>
-      <p><a href="accounts.html">instagram</a></p>
-      <p><a href="accounts.html">Twitter</a></p>
-      <p><a href="accounts.html">facebook</a></p>
-
-    </div>
-    <div id="visit-us" class="endbar">
-      <h3>Visit Us</h3>
-      <p><a href="accounts.html">find a location nearest</a></p>
-      <p><a href="accounts.html">offices</a></p>
-      <p><a href="accounts.html">Retail point</a></p>
-
-    </div>
-
-  </div>
 
 
 </body>
